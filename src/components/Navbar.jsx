@@ -1,15 +1,13 @@
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <h2 className="logo">Murali</h2>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  );
-};
-
-export default Navbar;
+export default function Navbar() {
+    return (
+        <nav className="fixed top-0 w-full bg-black/50 backdrop-blur z-50 px-8 py-4 flex justify-between">
+            <h1 className="text-xl font-bold">Murali.dev</h1>
+            <div className="space-x-6 text-sm">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    )
+}

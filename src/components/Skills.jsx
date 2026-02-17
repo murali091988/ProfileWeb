@@ -1,16 +1,15 @@
-const Skills = () => {
-  const skills = ["React", "Flutter", "Node.js", "MongoDB", "Firebase", "REST API"];
+const skills = ['React', 'Node.js', 'Flutter', 'AI/ML', 'AWS', 'Docker']
 
-  return (
-    <section id="skills" className="section dark">
-      <h2>Skills</h2>
-      <div className="skills">
-        {skills.map((skill, index) => (
-          <span key={index}>{skill}</span>
-        ))}
-      </div>
-    </section>
-  );
-};
 
-export default Skills;
+export default function Skills() {
+    return (
+        <section id="skills" className="px-10 py-20">
+            <h2 className="text-3xl font-bold mb-6">Skills</h2>
+            <div className="flex flex-wrap gap-4">
+                {skills.map(skill => (
+                    <span key={skill} className="px-4 py-2 bg-gray-800 rounded">{skill}</span>
+                ))}
+            </div>
+        </section>
+    )
+}
